@@ -43,6 +43,7 @@ import com.qulice.spi.Violation;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.net.URI;
 import java.net.URL;
 import java.util.Collection;
 import java.util.LinkedList;
@@ -58,9 +59,10 @@ import org.xml.sax.InputSource;
 /**
  * Validator with Checkstyle.
  *
- * @since 0.3
  * @checkstyle ClassDataAbstractionCoupling (260 lines)
+ * @since 0.3
  */
+@SuppressWarnings("all")
 public final class CheckstyleValidator implements ResourceValidator {
 
     /**
@@ -70,7 +72,7 @@ public final class CheckstyleValidator implements ResourceValidator {
 
     /**
      * Listener of checkstyle messages.
-      */
+     */
     private final CheckstyleListener listener;
 
     /**
@@ -80,6 +82,7 @@ public final class CheckstyleValidator implements ResourceValidator {
 
     /**
      * Constructor.
+     *
      * @param env Environment to use.
      */
     @SuppressWarnings("PMD.ConstructorOnlyInitializesOrCallOtherConstructors")
@@ -124,12 +127,14 @@ public final class CheckstyleValidator implements ResourceValidator {
         return results;
     }
 
-    @Override public String name() {
+    @Override
+    public String name() {
         return "Checkstyle";
     }
 
     /**
      * Filters out excluded files from further validation.
+     *
      * @param files Files to validate
      * @return List of relevant files
      */
@@ -148,6 +153,7 @@ public final class CheckstyleValidator implements ResourceValidator {
 
     /**
      * Load checkstyle configuration.
+     *
      * @return The configuration just loaded
      * @see #validate(Collection)
      */
@@ -184,6 +190,7 @@ public final class CheckstyleValidator implements ResourceValidator {
 
     /**
      * Create header content, from file.
+     *
      * @return The content of header
      * @see #configuration()
      */
@@ -230,6 +237,7 @@ public final class CheckstyleValidator implements ResourceValidator {
 
     /**
      * Convert file name to URL.
+     *
      * @param name The name of file
      * @return The URL
      * @see #header()
@@ -238,7 +246,7 @@ public final class CheckstyleValidator implements ResourceValidator {
         final URL url;
         if (name.startsWith("file:")) {
             try {
-                url = new URL(name);
+                url = URI.create(name).toURL();
             } catch (final MalformedURLException ex) {
                 throw new IllegalStateException("Invalid URL", ex);
             }
