@@ -1,24 +1,25 @@
 <img alt="logo" src="http://img.qulice.com/logo.svg" width="200px" height="55px"/>
 
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
-[![DevOps By Rultor.com](http://www.rultor.com/b/yegor256/qulice)](http://www.rultor.com/p/yegor256/qulice)
+[![DevOps By Rultor.com](http://www.rultor.com/b/eo-cqrs/qulice17)](http://www.rultor.com/p/eo-cqrs/qulice17)
 [![We recommend IntelliJ IDEA](https://www.elegantobjects.org/intellij-idea.svg)](https://www.jetbrains.com/idea/)
 
 [![mvn](https://github.com/yegor256/qulice/actions/workflows/mvn.yml/badge.svg?branch=master)](https://github.com/yegor256/qulice/actions/workflows/mvn.yml)
 [![PDD status](http://www.0pdd.com/svg?name=yegor256/qulice)](http://www.0pdd.com/p?name=yegor256/qulice)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.qulice/qulice/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.qulice/qulice)
-[![codebeat badge](https://codebeat.co/badges/9454ea39-1f11-4f6b-b086-ec5a2d658174)](https://codebeat.co/projects/github-com-teamed-qulice)
 [![codecov](https://codecov.io/gh/yegor256/qulice/branch/master/graph/badge.svg)](https://codecov.io/gh/yegor256/qulice)
 ![Lines of code](https://img.shields.io/tokei/lines/github/yegor256/qulice)
 [![Hits-of-Code](https://hitsofcode.com/github/yegor256/qulice)](https://hitsofcode.com/view/github/yegor256/qulice)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/qulice/blob/master/LICENSE.txt)
 
+Integrated with JDK17+ by [@EO-CQRS](https://github.com/eo-cqrs)
+
 Qulice is a static analysis quality control instrument for Java
 projects. It combines all the best static analysis instruments
-and pre-configure them, including
+and pre-configures them, including
 [Checkstyle](https://checkstyle.sourceforge.io/) and
 [PMD](https://pmd.github.io/).
-You don't need to use and configure them individually any more.
+You don't need to use and configure them individually anymore.
 
 Read more at [www.qulice.com](https://www.qulice.com).
 
@@ -62,7 +63,7 @@ instead of `${basedir}`.
 Read this short summary of [typical mistakes](https://github.com/yegor256/qulice/wiki/mistakes)
 you may encounter in your project.
 
-In order to download schemas required for XML validation you might need proxy
+In order to download schemas required for XML validation, you might need proxy
 setup. Maven proxy is not supported, but standard 
 [JVM proxy](https://docs.oracle.com/javase/8/docs/technotes/guides/net/proxies.html)
 works fine. To use it just add `-Dhttp.proxyHost=HOST -Dhttp.proxyPort=PORT`
