@@ -12,7 +12,10 @@
 [![Hits-of-Code](https://hitsofcode.com/github/yegor256/qulice)](https://hitsofcode.com/view/github/yegor256/qulice)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/qulice/blob/master/LICENSE.txt)
 
-Integrated with JDK17+ by [@EO-CQRS](https://github.com/eo-cqrs)
+Integrated with JDK17+ by [@EO-CQRS](https://github.com/eo-cqrs).
+
+
+This is fork of [original](https://github.com/yegor256/qulice) Qulice.
 
 Qulice is a static analysis quality control instrument for Java
 projects. It combines all the best static analysis instruments
