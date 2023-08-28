@@ -43,9 +43,9 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
   <build>
     <plugins>
       <plugin>
-        <groupId>com.qulice</groupId>
+        <groupId>io.github.eo-cqrs</groupId>
         <artifactId>qulice-maven-plugin</artifactId>
-        <version>@project.version@</version>
+        <version>1.0-SNAPSHOT</version>
         <configuration>
           <license>file:${basedir}/LICENSE.txt</license>
         </configuration>
