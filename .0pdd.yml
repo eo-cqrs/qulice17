@@ -1,10 +1,5 @@
 errors:
-  - yegor256@gmail.com
-  - krzysztof.krason@gmail.com
-# alerts:
-#   github:
-#     - yegor256
-
+  - abialiauski.dev@gmail.com
 tags:
   - pdd
   - bug
