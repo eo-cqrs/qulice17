@@ -35,8 +35,8 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
     <artifactId>parent</artifactId>
     <version>0.59.0</version>
   </parent>
-  <groupId>com.qulice</groupId>
-  <artifactId>qulice</artifactId>
+  <groupId>io.github.eo-cqrs</groupId>
+  <artifactId>quilice17-parent</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>qulice</name>
@@ -48,44 +48,42 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
   </modules>
   <description>Quality control library, integrating together other static analysis and validation tools and instruments.</description>
   <url>https://www.qulice.com</url>
-  <inceptionYear>2011</inceptionYear>
+  <inceptionYear>2023</inceptionYear>
   <organization>
     <name>Qulice.com</name>
     <url>https://www.qulice.com</url>
   </organization>
   <licenses>
     <license>
-      <name>BSD</name>
-      <url>https://www.qulice.com/LICENSE.txt</url>
-      <distribution>repo</distribution>
+      <name>MIT</name>
+      <url>https://github.com/eo-cqrs/qulice17/blob/master/LICENSE.txt</url>
     </license>
   </licenses>
   <developers>
     <developer>
       <id>1</id>
-      <name>Yegor Bugayenko</name>
-      <email>yegor256@gmail.com.com</email>
-      <organization>Zerocracy</organization>
-      <organizationUrl>https://www.zerocracy.com</organizationUrl>
+      <name>Aliaksei Bialiauski</name>
+      <email>aliaksei.bialiauski@hey.com</email>
+      <organization>Solvd</organization>
+      <organizationUrl>https://www.solvd.com/</organizationUrl>
       <roles>
         <role>Architect</role>
         <role>Developer</role>
       </roles>
-      <timezone>-7</timezone>
     </developer>
   </developers>
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/yegor256/qulice/issues</url>
+    <url>https://github.com/eo-cqrs/qulice17/issues</url>
   </issueManagement>
   <scm>
-    <connection>scm:git:git@github.com:yegor256/qulice.git</connection>
-    <developerConnection>scm:git:git@github.com:yegor256/qulice.git</developerConnection>
-    <url>https://github.com/yegor256/qulice</url>
+    <connection>scm:git:git@github.com:eo-cqrs/qulice17.git</connection>
+    <developerConnection>scm:git:git@github.com:eo-cqrs/qulice17.git</developerConnection>
+    <url>https://github.com/eo-cqrs/qulice17</url>
   </scm>
   <ciManagement>
-    <system>travis</system>
-    <url>https://travis-ci.org/yegor256/qulice</url>
+    <system>GitHub Actions</system>
+    <url>https://github.com/eo-cqrs/qulice17/actions</url>
   </ciManagement>
   <distributionManagement>
     <site>
