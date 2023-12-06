@@ -2,6 +2,10 @@ architect:
   - h1alexbel
 docker:
   image: l3r8y/rultor-image:1.0.3
+assets:
+  settings.xml: eo-cqrs/eo-cqrs-secrets#assets/settings.xml
+  secring.gpg: eo-cqrs/eo-cqrs-secrets#assets/secring.gpg
+  pubring.gpg: eo-cqrs/eo-cqrs-secrets#assets/pubring.gpg
 merge:
   script: |-
     mvn clean install -Pqulice-profile -Pqulice --errors --batch-mode
