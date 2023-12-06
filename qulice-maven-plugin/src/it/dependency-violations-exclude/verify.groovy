@@ -32,5 +32,5 @@
 // * Validate that the build really failed and violations were reported.
 // */
 //
-//def log = new File(basedir, 'build.log')
-//assert log.text.contains('No dependency problems found')
+def log = new File(basedir, 'build.log')
+assert log.text.contains('No dependency problems found')

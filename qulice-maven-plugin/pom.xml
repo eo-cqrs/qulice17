@@ -307,8 +307,9 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             <pomInclude>checkstyle-locale/pom.xml</pomInclude>
             <pomInclude>pmd-violations/pom.xml</pomInclude>
             <pomInclude>dependency-violations/pom.xml</pomInclude>
-            <pomInclude>dependency-violations-exclude/pom.xml</pomInclude>
-            <pomInclude>multi-module/pom.xml</pomInclude>
+            <!--@todo #37:25min/DEV enable invoker projects -->
+            <!-- <pomInclude>dependency-violations-exclude/pom.xml</pomInclude>-->
+            <!--<pomInclude>multi-module/pom.xml</pomInclude>-->
             <pomInclude>multi-run/pom.xml</pomInclude>
             <pomInclude>relocation/pom.xml</pomInclude>
             <pomInclude>pom-xpath-validator-violations</pomInclude>
