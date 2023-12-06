@@ -2,8 +2,6 @@ architect:
   - h1alexbel
 docker:
   image: l3r8y/rultor-image:1.0.3
-install: |
-  pdd --file=/dev/null
 merge:
   script: |-
     mvn clean install -Pqulice-profile -Pqulice --errors --batch-mode
