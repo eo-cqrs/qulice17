@@ -66,7 +66,7 @@ public interface Environment {
     File tempdir();
 
     /**
-     * Get directory where <tt>.class</tt> files are stored.
+     * Get directory where .class files are stored.
      * @return The directory
      */
     File outdir();
